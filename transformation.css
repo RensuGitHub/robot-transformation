@@ -1,0 +1,327 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    background-image: url('robottransbg.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.robotname {
+	text-align: center;
+  	position: relative;
+}
+
+.robotname span {
+  	position: relative;
+  	display: inline-block;
+  	font-size: 40px;
+  	color: #black;
+  	text-transform: uppercase;
+  	animation: flip 2s infinite;
+  	animation-delay: calc(.2s * var(--i))
+}
+
+.Notes {
+	text-align: Center;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 1.8em;
+}
+
+/* Lancet-2 Body Parts */
+
+.Lancet2-Shell {
+	width: 306px;
+	height: 306px;
+	border: solid 5px black;
+	background-color: white;
+	position: absolute;
+	border-radius: 300px;
+	top: 15%;
+	left: 38%;
+	animation: Lancet2-Shell 2s normal forwards;
+}
+
+.Lancet2-RedCross {
+	width: 100px;
+  	height: 100px;
+  background: linear-gradient(to bottom, transparent 35%, #d00 35%, #d00 65%,  transparent 65%),
+    linear-gradient(to right, transparent 35%, #d00 35%, #d00 65%, transparent 65%);
+	top: 26%;
+	left: 42%;
+	position: absolute;
+}
+
+.Lancet2-BodyOne {
+	width: 150px;
+	height: 50px;
+	background: #404040;
+	position: absolute;
+	top: 30%;
+	left: 42%;
+	border: solid 5px black;
+	border-radius: 5px;
+	animation: Lancet2-BodyOne 1s normal forwards;
+	animation-delay: 2s;
+}
+
+.Lancet2-Wheels1 {
+	width: 75px;
+	height: 75px;
+	top: 23%;
+	left: 40%;
+	background: #404037;
+	position: absolute;
+	border: solid 5px black;
+	border-radius: 50%;
+	animation: Lancet2-Wheels1 3s normal forwards;
+	animation-delay: 10s;
+}
+
+.Lancet2-Wheels2 {
+	width: 75px;
+	height: 75px;
+	top: 23%;
+	left: 47%;
+	background: #404037;
+	position: absolute;
+	border: solid 5px black;
+	border-radius: 50%;
+	animation: Lancet2-Wheels2 3s normal forwards;
+	animation-delay: 10s;
+}
+
+.Lancet2-Wheels3 {
+	width: 75px;
+	height: 75px;
+	top: 23%;
+	left: 46%;
+	background: #404037;
+	position: absolute;
+	border: solid 5px black;
+	border-radius: 50%;
+	animation: Lancet2-Wheels3 2.9s normal forwards;
+	animation-delay: 10.4s;
+}
+
+.Lancet2-SmolWheel1 {
+	animation: Lancet2-SmolWheel1 3s normal forwards;
+	animation-delay: 14s;
+}
+
+.Lancet2-SmolWheel2 {
+	animation: Lancet2-SmolWheel2 3s normal forwards;
+	animation-delay: 14s;
+}
+
+.Lancet2-SmolWheel3 {
+	animation: Lancet2-SmolWheel3 3s normal forwards;
+	animation-delay: 14s;
+}
+
+.Lancet2-BodyTwo {
+	border: solid 5px black;
+	width: 150px;
+	height: 50px;
+	-webkit-transform: skew(21deg);
+	position: absolute;
+	background: white;
+	top: 38%;
+	left: 42%;
+	animation: Lancet2-BodyTwo 1s normal forwards;
+	animation-delay: 2s;
+}
+
+.Lancet2-BodyTwoTwo {
+	border: solid 5px black;
+	border-radius: 5px;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background: white;
+	top: 32%;
+	left: 50%;
+	animation: Lancet2-BodyTwoTwo 3s normal forwards;
+	animation-delay: 5s;
+}
+
+.Lancet2-BodyThree {
+	border: solid 5px black;
+	border-radius: 5px;
+	width: 200px;
+	height: 30px;
+	position: absolute;
+	background: white;
+	top: 38%;
+	left: 40%;
+	animation: Lancet2-BodyThree 7s normal forwards;
+	animation-delay: 3s;
+}
+
+.Lancet2-BodyFour {
+	width: 150px;
+	height: 50px;
+	background: #808080;
+	position: absolute;
+	top: 38%;
+	left: 42%;
+	border: solid 5px black;
+	border-radius: 5px;
+	animation: Lancet2-BodyFour 4s normal forwards;
+	animation-delay: 3s;
+}
+
+.Lancet2-BodyFive {
+	width: 150px;
+	height: 50px;
+	background: #404040;
+	position: absolute;
+	top: 30%;
+	left: 42%;
+	border: solid 5px black;
+	border-radius: 5px;
+	animation: Lancet2-BodyFive 6s normal forwards;
+	animation-delay: 5s;
+}
+
+.Lancet2-Hose {
+	animation: Lancet2-Hose 5s normal forwards;
+	animation-delay: 14s;
+}
+
+.Lancet2-Hose2 {
+	animation: Lancet2-Hose2 5s normal forwards;
+	animation-delay: 14.3s;
+}
+
+.Lancet2-Hose3 {
+	animation: Lancet2-Hose2 5s normal forwards;
+	animation-delay: 14.5s;
+}
+
+
+/* =============================================================================== */
+
+/* ====================== Animation ============================================== */
+
+/* =============================================================================== */
+
+@keyframes Lancet2-Shell {
+	0%{width: 306px;height: 306px;border: solid 5px black;background-color: white;position: absolute;border-radius: 300px;top: 15%;left: 38%;}
+	100%{width: 306px;height: 232.5px;border: solid 5px black;background-color: white;position: absolute;border-radius: 300px 300px 125px 125px; top: 15%;left: 38%;}
+}
+
+@keyframes Lancet2-BodyOne {
+	0%{width: 150px;height: 50px;background: #404040;position: absolute;top: 30%;left: 42%;border: solid 5px black;border-radius: 5px;}
+	25%{width: 150px;height: 50px;background: #404040;position: absolute;top: 48%;left: 42%;border: solid 5px black;border-radius: 5px;}
+	50%{width: 150px;height: 50px;background: #404040;position: absolute;top: 48%;left: 38.8%;border:solid 5px black;border-radius: 5px;}
+	75%{width: 300px;height: 50px;background: #404040;position: absolute;top: 48%;left: 38.8%;border:solid 5px black;border-radius: 5px;}
+	100%{width: 300px;height: 50px;background: #404040;position: absolute;top: 48%;left: 38.8%;border:solid 5px black;border-radius: 5px;}
+}
+
+@keyframes Lancet2-BodyTwo {
+	0%{border: solid 5px black;width: 150px;height: 50px;-webkit-transform: skew(21deg);position: absolute;background: white;top: 38%;left: 42%;}
+	25%{border: solid 5px black;width: 150px;height: 50px;-webkit-transform: skew(21deg);position: absolute;background: white;top: 48%;left: 42%;}
+	50%{border: solid 5px black;width: 150px;height: 50px;-webkit-transform: skew(21deg);position: absolute;background: white;top: 48%;left: 35%;}
+	75%{border: solid 5px black;width: 150px;height: 50px;-webkit-transform: skew(21deg);position: absolute;background: white;top: 48%;left: 35%;}
+	100%{border: solid 5px black;width: 150px;height: 50px;-webkit-transform: skew(21deg);position: absolute;background: white;top: 52%;left: 38%;}
+}
+
+@keyframes Lancet2-BodyTwoTwo {
+	0%{border: solid 5px black; border-radius: 5px; width: 100px;height: 100px; position: absolute;background: white;top: 32%;left: 50%;}
+	20%{border: solid 5px black; border-radius: 5px; width: 100px;height: 100px; position: absolute; background: white;top: 56%;left: 50%;}
+	40%{border: solid 5px black; border-radius: 5px; width: 100px;height: 100px; position: absolute; background: white;top: 56%;left: 61%;}
+	60%{border: solid 5px black; border-radius: 5px; width: 100px;height: 100px; position: absolute; background: white;top: 50%;left: 61%;}
+	80%{border: solid 5px black; border-radius: 5px; width: 100px;height: 100px; position: absolute; background: white;top: 50%;left: 57%;}
+	100%{border: solid 5px black; border-radius: 5px; width: 100px;height: 100px; position: absolute; background: white;top: 52%;left: 57%;}
+}
+
+@keyframes Lancet2-BodyThree {
+	0%{border: solid 5px black;border-radius: 5px;width: 200px;height: 30px;position: absolute;background: white;top: 38%;left: 40%;}
+	25%{border: solid 5px black;border-radius: 5px;width: 200px;height: 30px;position: absolute;background: white;top: 56%;left: 40%;}
+	50%{border: solid 5px black;border-radius: 5px;width: 200px;height: 30px;position: absolute;background: white;top: 56%;left: 40%;}
+	100%{border: solid 5px black;border-radius: 5px;width: 200px;height: 30px;position: absolute;background: white;top: 56.2%;left: 43.3%;}
+}
+
+@keyframes Lancet2-BodyFour {
+	0%{width: 150px;height: 50px;background: #808080;position: absolute;top: 38%;left: 42%;border: solid 5px black;border-radius: 5px;}
+	33%{width: 150px;height: 50px;background: #808080;position: absolute;top: 54%;left: 42%;border: solid 5px black;border-radius: 5px;}
+	66%{width: 350px;height: 50px;background: #808080;position: absolute;top: 54%;left: 37%;border: solid 5px black;border-radius: 5px;}
+	100%{width: 350px;height: 50px;background: #808080;position: absolute;top: 58%;left: 37%;border: solid 5px black;border-radius: 5px;}
+}
+
+@keyframes Lancet2-BodyFive {
+	0%{width: 150px;height: 50px;background: #404040;position: absolute;top: 30%;left: 42%;border: solid 5px black;border-radius: 5px;}
+	25%{width: 150px;height: 50px;background: #404040;position: absolute;top: 48%;left: 42%;border: solid 5px black;border-radius: 5px;}
+	50%{width: 150px;height: 50px;background: #404040;position: absolute;top: 48%;left: 38.8%;border:solid 5px black;border-radius: 5px;}
+	75%{width: 320px;height: 50px;background: #404040;position: absolute;top: 58%;left: 38.8%;border:solid 5px black;border-radius: 5px;}
+	100%{width: 330px;height: 50px;background: #404040;position: absolute;top: 60%;left: 38.8%;border:solid 5px black;border-radius: 5px;}
+}
+
+@keyframes Lancet2-Wheels1 {
+	0%{width: 75px;height: 75px;top: 43%;left: 40%;background: #404037;position: absolute;border: solid 5px black;border-radius: 50%;}
+	100%{width: 75px;height: 75px;top: 63%;left: 40%;background: #404037;position: absolute;border: solid 5px black;border-radius: 50%;}
+}
+
+@keyframes Lancet2-Wheels2 {
+	0%{width: 75px;height: 75px;top: 43%;left: 47%;background: #404037;position: absolute;border: solid 5px black;border-radius: 50%;}
+	100%{width: 75px;height: 75px;top: 63%;left: 47%;background: #404037;position: absolute;border: solid 5px black;border-radius: 50%;}
+}
+
+@keyframes Lancet2-Wheels3 {
+	0%{width: 75px;height: 75px;top: 52%;left: 56%;background: #404037;position: absolute;border: solid 5px black;border-radius: 50%;}
+	100%{width: 75px;height: 75px;top: 63%;left: 56%;background: #404037;position: absolute;border: solid 5px black;border-radius: 50%;}
+}
+
+@keyframes Lancet2-SmolWheel1 {
+	0%{width: 0; height: 0;}
+	100%{width: 40px;
+	height: 40px;
+	top: 66%;
+	left: 41.4%;
+	background: #404037;
+	position: absolute;
+	border: solid 3px black;
+	border-radius: 50%;}
+}
+
+@keyframes Lancet2-SmolWheel2 {
+	0%{width: 0; height: 0;}
+	100%{width: 40px;
+	height: 40px;
+	top: 66%;
+	left: 48.4%;
+	background: #404037;
+	position: absolute;
+	border: solid 3px black;
+	border-radius: 50%;}
+}
+
+@keyframes Lancet2-SmolWheel3 {
+	0%{width: 0; height: 0;}
+	100%{width: 40px;
+	height: 40px;
+	top: 66%;
+	left: 57.4%;
+	background: #404037;
+	position: absolute;
+	border: solid 3px black;
+	border-radius: 50%;}
+}
+
+@keyframes Lancet2-Hose {
+	0%{position: absolute;width: 200px; height: 20px; background: #867E75;border: solid 5px black;top: 40%;left: 43%;}
+	100%{position: absolute;width: 200px; height: 20px; background: #867E75;border: solid 5px black;top: 40%;left: 47%;}
+}
+
+@keyframes Lancet2-Hose2 {
+	0%{position: absolute;width: 200px; height: 20px; background: #FFE328 ;border: solid 5px black;top: 40%;left: 45%;}
+	100%{position: absolute;width: 200px; height: 20px; background: #FFE328;border: solid 5px black;top: 40%;left: 48%;}
+}
+
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
